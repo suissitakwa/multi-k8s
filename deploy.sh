@@ -1,6 +1,6 @@
-docker build -t suissitakwa/multi-client:latest suissitakwa/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t suissitakwa/multi-server:latest suissitakwa/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t suissitakwa/multi-worker:latest suissitakwa/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t suissitakwa/multi-client:latest -t suissitakwa/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t suissitakwa/multi-server:latest -t suissitakwa/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t suissitakwa/multi-worker:latest -t suissitakwa/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push suissitakwa/multi-client:latest
 docker push suissitakwa/multi-server:latest
